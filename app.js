@@ -13,7 +13,7 @@ const app = express();
 config({ path: "./config/config.env" });
 
 // Ensure environment variables are set correctly
-const allowedOrigins = [process.env.FRONTEND_URL, process.env.DASHBOARD_URL];
+const allowedOrigins = [process.env.FRONTEND_URL, process.env.DASHBOARD_URL,'https://hma-back.netlify.app'];
 
 // Set up CORS middleware
 app.use(
